@@ -362,6 +362,7 @@ export default function CustardlyLanding() {
             <div key={index} style={styles.flavorCard}>
               <img
                 src={flavor.img}
+                alt="Flavours"
                 style={styles.flavorImage}
                 />
             </div> 
@@ -430,7 +431,7 @@ export default function CustardlyLanding() {
         </div>
       </div>
       <div>
-        <img src={Duo} alt="Our Story Image" style={{width: '100%', height: '400px', objectFit: 'cover'}} />
+        <img src={Duo} alt="Our Story" style={{width: '100%', height: '400px', objectFit: 'cover'}} />
       </div>
 </div>
       {/* Footer CTA */}
