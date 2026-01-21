@@ -111,7 +111,7 @@ export default function CustardlyLanding() {
       transition: 'all 0.3s',
     },
     sectionTitle: {
-      fontFamily: "'Felipa', cursive",
+      fontFamily: "'Smythe', cursive",
       fontSize: '36px',
       textAlign: 'center',
       margin: '0 0 30px',
@@ -124,7 +124,7 @@ export default function CustardlyLanding() {
       paddingBottom: '20px',
     },
     titleDeco: {
-      fontStyle:'Smythe, cursive',  
+      fontStyle:"'Smythe', cursive",  
       display: 'inline-block',
       padding: '0 20px',
       color: 'transparent',
@@ -167,9 +167,10 @@ export default function CustardlyLanding() {
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
       gap: '20px',
-      maxWidth: '82%',
-      height: '35vh',
+      maxWidth: '95%',
+      maxHeight: '42vh',
       margin: '0 auto',
+      paddingBottom: '70px',
     },
     flavorCard: {
       
@@ -205,12 +206,12 @@ export default function CustardlyLanding() {
       
     },
     sizeImage: {
-      width: '100%',
-      height: '100%',
+      maxWidth: '100%',
+      maxHeight: '100%',
       background: 'linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)',
       borderRadius: '8px',
       display: 'flex',
-      overfit: 'cover',
+      objectFit: 'cover',
       alignItems: 'center',
       justifyContent: 'center',
       fontSize: '64px',
@@ -309,7 +310,7 @@ export default function CustardlyLanding() {
         </div>
         </div>
         <div>
-            <img src={CustImg} alt="Custardly Dessert" style={{padding:"1px",height: isMobile ? '20vh' : '67vh', width: window.innerWidth > 768 ? '37vw' : '20vw'}} />
+            <img src={CustImg} alt="Custardly Dessert" style={{padding:"1px",maxHeight: isMobile ? '20vh' : '69vh', maxWidth: window.innerWidth > 768 ? '37vw' : '20vw'}} />
             
         </div>
       </div>
