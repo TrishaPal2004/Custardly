@@ -13,13 +13,26 @@ export default function CustardlyLanding() {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
   const styles = {
     container: {
-      fontFamily: 'Georgia, serif',
-      backgroundColor: '#050000ff',
-      color: 'gradient(180deg, #ffeb86ff 0%, #b39918ff 100%)',
-      
-      padding: 0,
-      margin: 0,
-    },
+  position: 'relative',
+  fontFamily: 'Georgia, serif',
+  backgroundColor: '#050000ff',
+  overflow: 'hidden',
+  padding: 0,
+  margin: 0,
+}
+,
+glow: {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  width: '920px',
+  height: '260px',
+  transform: 'translate(-50%, -50%)',
+  background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.08) 35%, rgba(0,0,0,0) 70%)',
+  filter: 'blur(40px)',
+  pointerEvents: 'none',
+}
+,
     About: {
       display: 'flex',
       flexDirection: 'row',   
@@ -49,7 +62,7 @@ export default function CustardlyLanding() {
      
     },
     logo: {
-      fontSize: '32px',
+      fontSize: '42px',
       fontWeight: 'bold',
       letterSpacing: '3px',
       marginBottom: '20px',
@@ -57,10 +70,10 @@ export default function CustardlyLanding() {
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
       textShadow:   '2px 2px 4px rgba(0,0,0,0.6)',
-      
+      maskImage: 'radial-gradient(circle, black 65%, transparent 90%)'
     },
     heroTitle: {
-      fontSize: '48px',
+      fontSize: '58px',
       fontFamily: "'Smythe', cursive",
       fontWeight: 'normal',
       margin: '20px 0',
@@ -70,7 +83,7 @@ export default function CustardlyLanding() {
       textShadow:   '2px 2px 4px rgba(0,0,0,0.6)',
     },
     heroSubtitle: {
-      fontSize: '20px',
+      fontSize: '30px',
        background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
@@ -82,7 +95,7 @@ export default function CustardlyLanding() {
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
       textShadow:   '2px 2px 4px rgba(0,0,0,0.6)',
-      fontSize: '14px',
+      fontSize: '20px',
       margin: '10px 0',
     },
     buttonContainer: {
@@ -91,21 +104,26 @@ export default function CustardlyLanding() {
       justifyContent: 'center',
       marginTop: '30px',
       flexWrap: 'wrap',
+      
     },
     button: {
       padding: '12px 30px',
       fontSize: '16px',
       border: '2px solid #453603ff',
+      borderRadius: '4px',
       background: 'linear-gradient(180deg, #dacd83ff 10%, #543d03ff 100%)',
       cursor: 'pointer',
       fontWeight: 'bold',
       transition: 'all 0.3s',
+      color:'black'
     },
     buttonOutline: {
       padding: '12px 30px',
       fontSize: '16px',
-      border: '2px solid #453603ff',
-      background: 'linear-gradient(180deg, #dacd83ff 10%, #543d03ff 100%)',
+      border: '2px solid #453603ff ',
+      borderRadius: '4px',
+      color: '#f6eac2',
+      background: 'transparent',
       cursor: 'pointer',
       fontWeight: 'bold',
       transition: 'all 0.3s',
@@ -159,7 +177,7 @@ export default function CustardlyLanding() {
       color: '#fff',
     },
     featureText: {
-      fontSize: '12px',
+      fontSize: '18px',
       color: '#aaa',
       lineHeight: '1.6',
     },
@@ -239,7 +257,7 @@ export default function CustardlyLanding() {
     tableCell: {
       padding: '20px',
       textAlign: 'center',
-      fontSize: '16px',
+      fontSize: '19px',
     },
     tableHeader: {
       fontWeight: 'bold',
@@ -265,7 +283,7 @@ export default function CustardlyLanding() {
       lineHeight: '1.6',
     },
     storyText: {
-      fontSize: '16px',
+      fontSize: '18px',
       color: '#aaa',
       margin: '10px 0',
       lineHeight: '1.8',
@@ -297,6 +315,7 @@ export default function CustardlyLanding() {
     <div style={styles.container}>
     <div style={styles.container}>
       {/* Hero Section */}
+      <div style={styles.glow}></div>
       <div style={styles.hero}>
         <div>
         <div style={styles.logo}>CUSTARDLY°</div>
@@ -315,8 +334,8 @@ export default function CustardlyLanding() {
         </div>
       </div>
     </div>
-        <div style={styles.container}>
-      {/* Why Choose Section */}
+      <div style={styles.container}>
+      <div style={styles.glow}></div>
       <div style={styles.section}>
         <h2 style={styles.sectionTitle}>
           <span style={styles.titleDeco}>Why Choose Custardly?</span>
@@ -352,9 +371,11 @@ export default function CustardlyLanding() {
           </div>
         </div>
       </div>
-
+    </div>
       {/* Flavors Section */}
-      <div style={styles.section }>
+      <div style={styles.container}>
+        <div style={styles.glow}></div>
+      <div style={styles.section}>
         <h2 style={styles.sectionTitle}>
           <span style={styles.titleDeco}>Explore Our Flavours</span>
         </h2>
@@ -370,7 +391,9 @@ export default function CustardlyLanding() {
           ))}
         </div>
       </div>
-
+        </div>
+        <div style={styles.container}>
+        <div style={styles.glow}></div>
       {/* Sizes Section */}
       <div style={styles.section}>
         <h2 style={styles.sectionTitle}>
@@ -417,6 +440,8 @@ export default function CustardlyLanding() {
       </div>
 
       {/* Story Section */}
+      <div style={styles.container}>
+      <div style={styles.glow}></div>
       <div style={styles.About}>
       <div style={styles.section}>
         <h2 style={styles.sectionTitle}>
@@ -434,6 +459,7 @@ export default function CustardlyLanding() {
       <div>
         <img src={Duo} alt="Our Story" style={{width: '100%', height: '400px', objectFit: 'cover'}} />
       </div>
+</div>
 </div>
       {/* Footer CTA */}
       <div style={styles.footer}>
