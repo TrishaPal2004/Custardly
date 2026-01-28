@@ -11,6 +11,16 @@ import Size3 from '../pics/size3.jpeg';
 import Duo from '../pics/duo.jpeg';
 export default function CustardlyLanding() {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const handleContact = () => {
+  const message = encodeURIComponent("Hi, I want to contact you for Custardly products.");
+  window.location.href = `https://wa.me/918597766538?text=${message}`;
+};
+  const handleScroll = () => {
+    const flavorsSection = document.getElementById('flavors-section');
+    if (flavorsSection) {
+      flavorsSection.scrollIntoView({ behavior: 'smooth' });
+    }   
+  };
   const styles = {
     container: {
   position: 'relative',
@@ -324,7 +334,7 @@ glow: {
         <p style={styles.heroText}>Made with real fruits. No guilt. No compromise.</p>
         <p style={styles.heroText}>Ready-to-eat premium custard in elegant jars.</p>
         <div style={styles.buttonContainer}>
-          <button style={styles.button}>Shop Now</button>
+          <button style={styles.button} onClick={handleScroll}>Shop Now</button>
           <button style={styles.buttonOutline}>Our Story</button>
         </div>
         </div>
@@ -373,13 +383,13 @@ glow: {
       </div>
     </div>
       {/* Flavors Section */}
-      <div style={styles.container}>
+      <div style={styles.container} id="flavors-section">
         <div style={styles.glow}></div>
       <div style={styles.section}>
         <h2 style={styles.sectionTitle}>
           <span style={styles.titleDeco}>Explore Our Flavours</span>
         </h2>
-        <div style={styles.flavorsGrid}>
+        <div style={styles.flavorsGrid} >
           {flavors.map((flavor, index) => (
             <div key={index} style={styles.flavorCard}>
               <img
@@ -465,8 +475,8 @@ glow: {
       <div style={styles.footer}>
         <h2 style={styles.footerTitle}>The Revolution Has a Taste</h2>
         <div style={styles.buttonContainer}>
-          <button style={styles.button}>Order Custardly</button>
-          <button style={styles.buttonOutline}>Become a Distributor</button>
+          <button style={styles.button} onClick={handleScroll}>Order Custardly</button>
+          <button style={styles.buttonOutline} onClick={handleContact}>Contact Us</button>
         </div>
       </div>
     </div>
