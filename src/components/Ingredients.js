@@ -22,7 +22,10 @@ export default function IngredientsShowcase() {
   }
   return (
     <div className="container">
-        <div style={{fontSize:"40px",color:"gold"}} onClick={NavigateTo} ><p>Custardly</p></div>
+        <div style={{fontSize:"40px",background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)'}} onClick={NavigateTo} ><p>Custardly</p></div>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500&display=swap');
         
@@ -89,19 +92,22 @@ export default function IngredientsShowcase() {
           font-size: clamp(3rem, 8vw, 6rem);
           font-weight: 300;
           letter-spacing: 0.15em;
-          background: linear-gradient(135deg, #ffd700 0%, #d4af37 50%, #b8860b 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+         background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
           background-clip: text;
           margin-bottom: 1rem;
-          text-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
           position: relative;
         }
 
         .subtitle {
           font-size: clamp(0.9rem, 2vw, 1.2rem);
           letter-spacing: 0.3em;
-          color: #c9a961;
+          background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
           font-weight: 300;
           text-transform: uppercase;
           margin-top: 1.5rem;
@@ -189,7 +195,10 @@ export default function IngredientsShowcase() {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.8rem;
           font-weight: 600;
-          color: #ffd700;
+          background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
           margin-bottom: 0.8rem;
           letter-spacing: 0.05em;
         }
@@ -220,7 +229,10 @@ export default function IngredientsShowcase() {
         }
 
         .gold-accent {
-          color: #d4af37;
+          background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
           font-style: italic;
         }
 

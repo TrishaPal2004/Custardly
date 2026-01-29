@@ -78,7 +78,7 @@ export default function CustardlyStory() {
 
         /* Hero Section */
         .hero-section {
-          min-height: 100vh;
+          min-height: 40vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -95,7 +95,7 @@ export default function CustardlyStory() {
           width: 150px;
           height: 2px;
           background: linear-gradient(90deg, transparent, #d4af37, transparent);
-          margin: 0 auto 3rem;
+          margin: 0 auto 0.3rem;
           animation: expandOrnament 2s ease forwards;
         }
 
@@ -109,11 +109,12 @@ export default function CustardlyStory() {
           font-size: clamp(3rem, 10vw, 7rem);
           font-weight: 900;
           letter-spacing: 0.05em;
-          background: linear-gradient(135deg, #ffd700 0%, #d4af37 50%, #b8860b 100%);
+          background: linear-gradient(180deg, #bfb9a1 0%, #d4af37 50%, #695217 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
           background-clip: text;
-          margin-bottom: 2rem;
+          margin-bottom: 0.4rem;
           line-height: 1.2;
           animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
         }
@@ -122,10 +123,13 @@ export default function CustardlyStory() {
           font-family: 'Crimson Text', serif;
           font-size: clamp(1.3rem, 3vw, 2rem);
           font-style: italic;
-          color: #c9a961;
+          background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
           max-width: 800px;
           line-height: 1.8;
-          margin-bottom: 3rem;
+          margin-bottom: 0.8rem;
           animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
         }
 
@@ -133,9 +137,14 @@ export default function CustardlyStory() {
           font-family: 'Playfair Display', serif;
           font-size: clamp(4rem, 12vw, 8rem);
           font-weight: 700;
-          color: rgba(212, 175, 55, 0.15);
+          background: linear-gradient(180deg, #bfb9a1 0%, #d4af37 50%, #695217 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+          background-clip: text;
+          margin-bottom: 0.2rem;
           letter-spacing: 0.2em;
-          margin-top: 3rem;
+          margin-top: 0.3rem;
           animation: fadeIn 2s ease 1s both;
         }
 
@@ -176,7 +185,7 @@ export default function CustardlyStory() {
           color: #d4af37;
           letter-spacing: 0.3em;
           margin-bottom: 2rem;
-          padding: 0.5rem 2rem;
+          padding: 0.5rem 0.6rem;
           border: 2px solid rgba(212, 175, 55, 0.3);
           border-radius: 2px;
           display: inline-block;
@@ -194,8 +203,13 @@ export default function CustardlyStory() {
           font-size: clamp(1.8rem, 4vw, 3.5rem);
           font-weight: 600;
           line-height: 1.4;
-          color: #ffd700;
-          margin-bottom: 3rem;
+          background: linear-gradient(180deg, #bfb9a1 0%, #d4af37 50%, #695217 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+          background-clip: text;
+          margin-bottom: 0.2rem;
+          margin-bottom: 0.3rem;
           position: relative;
           padding: 0 3rem;
         }
@@ -217,7 +231,7 @@ export default function CustardlyStory() {
 
         .story-quote::after {
           content: '"';
-          bottom: -2rem;
+          bottom: -0.2rem;
           right: 0;
         }
 
@@ -225,19 +239,29 @@ export default function CustardlyStory() {
           font-size: clamp(1.1rem, 2vw, 1.4rem);
           line-height: 2;
           color: #a89968;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.5rem;
           font-weight: 400;
         }
 
         .story-text.emphasis {
-          color: #d4af37;
+          background: linear-gradient(180deg, #bfb9a1 0%, #d4af37 50%, #695217 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+          background-clip: text;
+          margin-bottom: 0.2rem;
           font-weight: 500;
           font-style: italic;
         }
 
         .story-text.highlight {
           font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-          color: #ffd700;
+          background: linear-gradient(180deg, #bfb9a1 0%, #d4af37 50%, #695217 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+          background-clip: text;
+          margin-bottom: 0.2rem;
           font-weight: 600;
           margin: 2rem 0;
         }
@@ -266,7 +290,7 @@ export default function CustardlyStory() {
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
           gap: 3rem;
           max-width: 1000px;
-          margin: 4rem auto;
+          margin: 0.4rem auto;
           padding: 0 2rem;
         }
 
@@ -319,10 +343,12 @@ export default function CustardlyStory() {
           font-size: clamp(2rem, 5vw, 4rem);
           font-weight: 700;
           line-height: 1.3;
-          background: linear-gradient(135deg, #ffd700 0%, #d4af37 100%);
+          background: linear-gradient(180deg, #bfb9a1 0%, #d4af37 50%, #695217 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
           background-clip: text;
+          margin-bottom: 2rem;
           max-width: 1000px;
           margin-bottom: 3rem;
         }
@@ -407,7 +433,10 @@ export default function CustardlyStory() {
 
       {/* Grain Overlay */}
       <div className="grain-overlay"></div>
-        <div style={{color:"golden",fontFamily:"Georgia, serif",fontSize:"2rem"}} onClick={() => window.location.href = "/"} >Custardly</div>
+        <div style={{color:"golden",fontFamily:"Georgia, serif",fontSize:"2rem",background: 'linear-gradient(180deg, #fff1a1ff 10%, #ffb805ff 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.6)',padding: '1rem'}} onClick={() => window.location.href = "/"} >Custardly</div>
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-ornament"></div>
