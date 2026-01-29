@@ -150,8 +150,8 @@ export default function CustardlyStory() {
 
         /* Story Sections */
         .story-section {
-          min-height: 80vh;
-          padding: 6rem 2rem;
+          min-height: 20vh;
+          padding: 0.4rem 0.8rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -184,7 +184,7 @@ export default function CustardlyStory() {
           font-weight: 700;
           color: #d4af37;
           letter-spacing: 0.3em;
-          margin-bottom: 2rem;
+          margin-bottom: 0.2rem;
           padding: 0.5rem 0.6rem;
           border: 2px solid rgba(212, 175, 55, 0.3);
           border-radius: 2px;
@@ -225,7 +225,7 @@ export default function CustardlyStory() {
 
         .story-quote::before {
           content: '"';
-          top: -2rem;
+          top: -0.2rem;
           left: 0;
         }
 
@@ -332,7 +332,7 @@ export default function CustardlyStory() {
           justify-content: center;
           align-items: center;
           text-align: center;
-          padding: 6rem 2rem;
+          padding: 0.6rem 0.4rem;
           background: 
             radial-gradient(ellipse at 50% 50%, rgba(255, 215, 0, 0.15) 0%, transparent 70%),
             #000;
@@ -348,9 +348,8 @@ export default function CustardlyStory() {
           -webkit-text-fill-color: transparent;
           text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
           background-clip: text;
-          margin-bottom: 2rem;
           max-width: 1000px;
-          margin-bottom: 3rem;
+          margin-bottom: 0.3rem;
         }
 
         .final-text {
@@ -358,7 +357,7 @@ export default function CustardlyStory() {
           color: #c9a961;
           max-width: 800px;
           line-height: 1.8;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.5rem;
         }
 
         .signature {
@@ -366,7 +365,7 @@ export default function CustardlyStory() {
           font-size: 2rem;
           font-style: italic;
           color: #d4af37;
-          margin-top: 4rem;
+          margin-top: 0.4rem;
           letter-spacing: 0.05em;
         }
 
